@@ -1,0 +1,28 @@
+.detailContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    .productDetail{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+       
+        padding: 40px;
+        width: 100%;
+        .imageContainer{
+        border: 1px solid;
+        width: 40%;
+        height: 400px;
+        }
+        .productInfo{
+        border: 1px solid;
+        width: 40%;
+        height: 400px;
+        }
+    }
+}
+.mainImage{
+    width: 100%;
+    height: 100%;
+}

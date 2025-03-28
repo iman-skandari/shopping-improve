@@ -1,11 +1,13 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Shop = () => {
   return (
     <div>
-      shop page
+      Shop page
+     ggg
     </div>
-  )
-}
+  );
+};
 
-export default Shop
+export default Shop;
