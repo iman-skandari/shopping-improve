@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useContext } from "react";
 import styles from "./navbar.module.scss";
-import { NavLink } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import { CiLogin } from "react-icons/ci";
+import { FaUserCheck } from "react-icons/fa";
+import { AuthContext } from "../../context/authContext";
 const Navbar = () => {
+  const { auth } = useContext(AuthContext);
   return (
     <div className={styles.container}>
       <h1>My Shop</h1>
@@ -40,6 +43,11 @@ const Navbar = () => {
           </li>
         </ul>
       </nav>
+
+      <div>
+        {auth?.user ? <FaUserCheck fontSize={25} /> : <Link to="/login">  <CiLogin fontSize={25} /> </Link> }
+    
+      </div>
     </div>
   );
 };

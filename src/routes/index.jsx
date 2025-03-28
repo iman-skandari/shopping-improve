@@ -7,6 +7,7 @@ import Collection from "../pages/Collection";
 import Error from "../pages/Error";
 import PrivateLayout from "../Layout/private";
 import ItemDetail from "../pages/ItemDetail";
+import Login from "../pages/Login";
 
 export const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ export const router = createBrowserRouter([
       {
         path: "collection/:category/:productId",
         element: <ItemDetail />,
+      },
+      {
+        path: "login",
+        element: <Login />,
       },
     ],
   },
